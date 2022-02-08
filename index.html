@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="assets/images/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Login Form</title>
+</head>
+
+<body>
+    <section id="registration-page">
+        <form class="signup-form" action="#">
+            <div class="form-header">
+                <h1>Get Started Today!</h1>
+            </div>
+            <div class="form-body">
+                <div class="row">
+                    <div class="input-group">
+                        <label>First name </label>
+                        <input type="text" id="fname" placholder="Enter your first name" onchange="validateInput(fname)" required />
+                    </div>
+                    <div class="input-group">
+                        <label>Last name</label>
+                        <input type="text" id="lname" placholder="Enter your last name" onchange="validateInput(lname)" required/>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-group">
+                        <label>Email address</label>
+                        <input type="text" id="email" placholder="Enter your email" onchange="validateInput(email)" required/>
+                    </div>
+                    <div class="input-group">
+                        <label>Password</label>
+                        <input type="password" id="password" placholder="Enter your password" onchange="validateInput(password)" required/>
+                    </div>
+                </div>
+            </div>
+            <div class="hr-divider">
+                <hr />
+            </div>
+            <div class="claim-button">
+                <button>Claim Your Free Trial</button>
+            </div>
+            <div class="form-footer">
+                You are agreeing to our <a href="#">Terms and Services</a>
+            </div>
+        </form>
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>
